@@ -166,7 +166,7 @@ export async function listarUsuarios(token) {
   const dados = await resposta.json();
 
   if (!resposta.ok) {
-    throw new Error(dados.mensagem || "Não foi possível listar os usuários.");
+    throw new Error(dados.mensagem || "Não foi possível cadastar os usuários.");
   }
 
   return dados.usuarios;
