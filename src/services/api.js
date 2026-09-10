@@ -75,7 +75,7 @@ export async function login(email, senha) {
   //    Se você esquecer este if, um login errado passa como se tivesse dado
   //    certo — e o app quebra 3 telas depois, sem você entender por quê.
   if (!resposta.ok) {
-    throw new Error(dados.mensagem || "Não foi possível entrar.");
+    throw new Error(dados.mensagem || "Não foi possível entrar");
   }
 
   // 7) Devolve os dados prontos para o componente usar.
@@ -118,7 +118,7 @@ export async function cadastrar(nome, email, senha) {
   const dados = await resposta.json();
 
   if (!resposta.ok) {
-    throw new Error(dados.mensagem || "Não foi possível criar a conta.");
+    throw new Error(dados.mensagem || "Não foi possível criar a conta");
   }
 
   return dados; // { sucesso, mensagem, token, usuario }
@@ -166,7 +166,7 @@ export async function listarUsuarios(token) {
   const dados = await resposta.json();
 
   if (!resposta.ok) {
-    throw new Error(dados.mensagem || "Não foi possível cadastar os usuários.");
+    throw new Error(dados.mensagem || "Não foi possível cadastar os usuários");
   }
 
   return dados.usuarios;
@@ -216,7 +216,7 @@ export async function editarPerfil(token, nome, email) {
   const dados = await resposta.json();
 
   if (!resposta.ok) {
-    throw new Error(dados.mensagem || "Não foi possível salvar.");
+    throw new Error(dados.mensagem || "Não foi possível salvar");
   }
 
   return dados;
@@ -261,7 +261,7 @@ export async function desativarConta(token) {
 
   if (!resposta.ok) {
     throw new Error(
-      dados.mensagem || "Não sera possível desativar a conta."
+      dados.mensagem || "Não sera possível desativar a conta"
     );
   }
 
