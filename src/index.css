@@ -3,18 +3,18 @@
    ═══════════════════════════════════════════════════════════════ */
 
 :root {
-  --fundo: #0b0f1a;
-  --fundo-2: #121829;
-  --cartao: #161d33;
-  --borda: #263153;
+  --fundo: #5e24ac;
+  --fundo-2: #0d2874;
+  --cartao: #654add;
+  --borda: #c8ff00;
   --texto: #e8ecf8;
   --texto-fraco: #93a0c4;
-  --acento: #6d8bff;
+  --acento: #480cde;
   --acento-2: #b06dff;
   --ok: #34d399;
-  --atencao: #fbbf24;
-  --perigo: #f87171;
-  --raio: 14px;
+  --atencao: #fbac24;
+  --perigo: #ff0000;
+  --raio: 20px;
 }
 
 * {
